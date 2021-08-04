@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210804 15:10:41.743" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Ácido Florídrico\Desktop\Cursos\Estudo\POCs\POC_Cypress_Robot_CucumberRuby\Robot Framework\Tests">
+<suite id="s1-s1" name="FichasSingleStep" source="C:\Users\Ácido Florídrico\Desktop\Cursos\Estudo\POCs\POC_Cypress_Robot_CucumberRuby\Robot Framework\Tests\FichasSingleStep.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01: Doação válida Boleto">
+<kw name="Entrar na Página do Fichas de teste" library="FichasSingleStep_resource" type="SETUP">
+<kw name="Open Browser">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20210804 15:10:42.452" level="FAIL">Resource file 'FichasSingleStep_resource.robot' contains multiple keywords matching name 'Open Browser':
+    ${CITY}
+    ${CPF}
+    ${NAME}
+    ${NEIGHBOUR}
+    ${STREET_NUMBER}
+    ${STREET_SUFIX}
+    ${STREET}</msg>
+<status status="FAIL" starttime="20210804 15:10:42.452" endtime="20210804 15:10:42.452"/>
+</kw>
+<status status="FAIL" starttime="20210804 15:10:42.452" endtime="20210804 15:10:42.452"/>
+</kw>
+<status status="FAIL" starttime="20210804 15:10:42.452" endtime="20210804 15:10:42.452">Setup failed:
+Resource file 'FichasSingleStep_resource.robot' contains multiple keywords matching name 'Open Browser':
+    ${CITY}
+    ${CPF}
+    ${NAME}
+    ${NEIGHBOUR}
+    ${STREET_NUMBER}
+    ${STREET_SUFIX}
+    ${STREET}</status>
+</test>
+<status status="FAIL" starttime="20210804 15:10:41.773" endtime="20210804 15:10:42.452"/>
+</suite>
+<status status="FAIL" starttime="20210804 15:10:41.743" endtime="20210804 15:10:42.452"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="FichasSingleStep">Tests.FichasSingleStep</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
