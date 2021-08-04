@@ -3,6 +3,7 @@ Library   RequestsLibrary
 Library   Collections
 Library   SeleniumLibrary
 Library   FakerLibrary   locale=pt_BR
+Library   String
 
 *** Variables ***
 ${URL}              https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step
@@ -10,9 +11,6 @@ ${BROWSER}          chrome
 
 
 *** Keywords ***
-
-
-
 
 ### Setup ###
 
@@ -26,24 +24,25 @@ Fechar Página
 
 ### Keywords ###
 
-
-${CPF}               FakerLibrary.cpf
-${NAME}              Generate Random String    Generate Random String
-
-${STREET}            Street Name
-${STREET_NUMBER}     FakerLibrary.number
-${STREET_SUFIX}      Street Suffix
-${NEIGHBOUR}         Street Name
-${CITY}              City
-
-
 COMO Doador QUANDO preencher os campos com valores válidos
+    ${CPF}               FakerLibrary.Cpf        
+    ${NAME}              FakerLibrary.Name      
+    ${EMAIL}             FakerLibrary.Email 
+    ${TELEPHONE}         FakerLibrary.Phone Number
+    ${STREET}            Street Name    
+    ${STREET_NUMBER}     FakerLibrary.Random Number    
+    ${STREET_SUFIX}      Street Suffix      
+    ${NEIGHBOUR}         Street Name   
+    ${CITY}              City    
+    
+
+
     Log To Console                    FakerLibrary.Words
 
     Wait Until Element Is Visible     xpath=//*[@id="person_name"]
     Input Text                        xpath=//*[@id="person_name"]                     ${NAME}
-    Input Text                        xpath=//*[@id="person_email"]                    douglas@teste.com
-    Input Text                        xpath=//*[@id="person_phone_number"]             (33) 33333-3333
+    Input Text                        xpath=//*[@id="person_email"]                    ${EMAIL} 
+    Input Text                        xpath=//*[@id="person_phone_number"]             ${TELEPHONE}
     Input Text                        xpath=//*[@id="person_birthday"]                 12/12/2000
 
     Select From List By Value         xpath=//*[@id="person_gender"]                   male    
