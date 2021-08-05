@@ -24,8 +24,7 @@ Fechar Página
 
 ### Keywords ###
 
-COMO Doador QUANDO preencher os campos com valores válidos
-    ${CPF}               FakerLibrary.Cpf        
+COMO Doador QUANDO preencher os campos com valores válidos            
     ${NAME}              FakerLibrary.Name      
     ${EMAIL}             FakerLibrary.Email 
     ${TELEPHONE}         FakerLibrary.Phone Number
@@ -46,9 +45,6 @@ COMO Doador QUANDO preencher os campos com valores válidos
     Input Text                        xpath=//*[@id="person_birthday"]                 12/12/2000
 
     Select From List By Value         xpath=//*[@id="person_gender"]                   male    
-    
-    Input Text                        xpath=//*[@id="person_payment_attributes_tax_identification_number"]     ${CPF}
-    Select From List By Value         xpath=//*[@id="person_payment_attributes_payment_type"]                  1
 
     Input Text                        xpath=//*[@id="person_address_attributes_street"]                      ${STREET}
     Input Text                        xpath=//*[@id="person_address_attributes_number"]                      ${STREET_NUMBER}
@@ -56,7 +52,17 @@ COMO Doador QUANDO preencher os campos com valores válidos
     Input Text                        xpath=//*[@id="person_address_attributes_neighbour"]                   ${NEIGHBOUR}
     Input Text                        xpath=//*[@id="person_address_attributes_city"]                        ${CITY}  
     Select From List By Value         xpath=//*[@id="person_address_attributes_state_abbr"]                  AC
+    
+E Preencher com CPF Válido
+    ${CPF}               FakerLibrary.Cpf
+    Input Text                        xpath=//*[@id="person_payment_attributes_tax_identification_number"]     ${CPF}
 
+E escolher a opção de Boleto
+    Select From List By Value         xpath=//*[@id="person_payment_attributes_payment_type"]                  1
+
+
+
+E Confimar a Doação
     Click Button                      xpath=//*[@id="single_step_submit"]
 
 ENTÃO a doação deve ter sido efetuada com sucesso

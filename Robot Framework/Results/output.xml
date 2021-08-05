@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210804 16:03:51.552" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210804 16:06:46.260" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\Ácido Florídrico\Desktop\Cursos\Estudo\POCs\POC_Cypress_Robot_CucumberRuby\Robot Framework\Tests">
 <suite id="s1-s1" name="FichasSingleStep" source="C:\Users\Ácido Florídrico\Desktop\Cursos\Estudo\POCs\POC_Cypress_Robot_CucumberRuby\Robot Framework\Tests\FichasSingleStep.robot">
 <test id="s1-s1-t1" name="Caso de Teste 01: Doação válida Boleto">
@@ -8,191 +8,199 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210804 16:03:52.300" level="INFO">Opening browser 'chrome' to base url 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step'.</msg>
-<status status="PASS" starttime="20210804 16:03:52.300" endtime="20210804 16:03:56.204"/>
+<msg timestamp="20210804 16:06:47.008" level="INFO">Opening browser 'chrome' to base url 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step'.</msg>
+<status status="PASS" starttime="20210804 16:06:47.008" endtime="20210804 16:06:50.714"/>
 </kw>
-<status status="PASS" starttime="20210804 16:03:52.300" endtime="20210804 16:03:56.204"/>
+<status status="PASS" starttime="20210804 16:06:47.007" endtime="20210804 16:06:50.714"/>
 </kw>
 <kw name="COMO Doador QUANDO preencher os campos com valores válidos" library="FichasSingleStep_resource">
-<kw name="Cpf" library="FakerLibrary">
-<var>${CPF}</var>
-<msg timestamp="20210804 16:03:56.205" level="INFO">${CPF} = 702.613.859-68</msg>
-<status status="PASS" starttime="20210804 16:03:56.205" endtime="20210804 16:03:56.205"/>
-</kw>
 <kw name="Name" library="FakerLibrary">
 <var>${NAME}</var>
 <doc>:example 'John Doe'</doc>
-<msg timestamp="20210804 16:03:56.205" level="INFO">${NAME} = Brenda Santos</msg>
-<status status="PASS" starttime="20210804 16:03:56.205" endtime="20210804 16:03:56.205"/>
+<msg timestamp="20210804 16:06:50.715" level="INFO">${NAME} = Ana Júlia Duarte</msg>
+<status status="PASS" starttime="20210804 16:06:50.714" endtime="20210804 16:06:50.715"/>
 </kw>
 <kw name="Email" library="FakerLibrary">
 <var>${EMAIL}</var>
-<msg timestamp="20210804 16:03:56.206" level="INFO">${EMAIL} = wporto@cardoso.org</msg>
-<status status="PASS" starttime="20210804 16:03:56.206" endtime="20210804 16:03:56.206"/>
+<msg timestamp="20210804 16:06:50.715" level="INFO">${EMAIL} = bcostela@jesus.org</msg>
+<status status="PASS" starttime="20210804 16:06:50.715" endtime="20210804 16:06:50.715"/>
 </kw>
 <kw name="Phone Number" library="FakerLibrary">
 <var>${TELEPHONE}</var>
-<msg timestamp="20210804 16:03:56.206" level="INFO">${TELEPHONE} = +55 (041) 4809 0498</msg>
-<status status="PASS" starttime="20210804 16:03:56.206" endtime="20210804 16:03:56.206"/>
+<msg timestamp="20210804 16:06:50.716" level="INFO">${TELEPHONE} = +55 (031) 2964-3220</msg>
+<status status="PASS" starttime="20210804 16:06:50.715" endtime="20210804 16:06:50.716"/>
 </kw>
 <kw name="Street Name" library="FakerLibrary">
 <var>${STREET}</var>
 <doc>:example 'Crist Parks'</doc>
-<msg timestamp="20210804 16:03:56.207" level="INFO">${STREET} = Conjunto Amanda Ribeiro</msg>
-<status status="PASS" starttime="20210804 16:03:56.206" endtime="20210804 16:03:56.207"/>
+<msg timestamp="20210804 16:06:50.716" level="INFO">${STREET} = Sítio Maria Correia</msg>
+<status status="PASS" starttime="20210804 16:06:50.716" endtime="20210804 16:06:50.716"/>
 </kw>
 <kw name="Random Number" library="FakerLibrary">
 <var>${STREET_NUMBER}</var>
 <doc>Generate a random integer according to the following rules:</doc>
-<msg timestamp="20210804 16:03:56.207" level="INFO">${STREET_NUMBER} = 3039074</msg>
-<status status="PASS" starttime="20210804 16:03:56.207" endtime="20210804 16:03:56.207"/>
+<msg timestamp="20210804 16:06:50.716" level="INFO">${STREET_NUMBER} = 623671</msg>
+<status status="PASS" starttime="20210804 16:06:50.716" endtime="20210804 16:06:50.716"/>
 </kw>
 <kw name="Street Suffix" library="FakerLibrary">
 <var>${STREET_SUFIX}</var>
 <doc>:example 'Avenue'</doc>
-<msg timestamp="20210804 16:03:56.207" level="INFO">${STREET_SUFIX} = Street</msg>
-<status status="PASS" starttime="20210804 16:03:56.207" endtime="20210804 16:03:56.207"/>
+<msg timestamp="20210804 16:06:50.717" level="INFO">${STREET_SUFIX} = Street</msg>
+<status status="PASS" starttime="20210804 16:06:50.716" endtime="20210804 16:06:50.717"/>
 </kw>
 <kw name="Street Name" library="FakerLibrary">
 <var>${NEIGHBOUR}</var>
 <doc>:example 'Crist Parks'</doc>
-<msg timestamp="20210804 16:03:56.208" level="INFO">${NEIGHBOUR} = Condomínio Dias</msg>
-<status status="PASS" starttime="20210804 16:03:56.208" endtime="20210804 16:03:56.208"/>
+<msg timestamp="20210804 16:06:50.717" level="INFO">${NEIGHBOUR} = Sítio de Nascimento</msg>
+<status status="PASS" starttime="20210804 16:06:50.717" endtime="20210804 16:06:50.717"/>
 </kw>
 <kw name="City" library="FakerLibrary">
 <var>${CITY}</var>
 <doc>:example 'Sashabury'</doc>
-<msg timestamp="20210804 16:03:56.208" level="INFO">${CITY} = da Rosa Verde</msg>
-<status status="PASS" starttime="20210804 16:03:56.208" endtime="20210804 16:03:56.208"/>
+<msg timestamp="20210804 16:06:50.717" level="INFO">${CITY} = Rodrigues</msg>
+<status status="PASS" starttime="20210804 16:06:50.717" endtime="20210804 16:06:50.717"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>FakerLibrary.Words</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210804 16:03:56.208" endtime="20210804 16:03:56.209"/>
+<status status="PASS" starttime="20210804 16:06:50.717" endtime="20210804 16:06:50.718"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_name"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210804 16:03:56.209" endtime="20210804 16:03:56.238"/>
+<status status="PASS" starttime="20210804 16:06:50.718" endtime="20210804 16:06:50.751"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_name"]</arg>
 <arg>${NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.239" level="INFO">Typing text 'Brenda Santos' into text field 'xpath=//*[@id="person_name"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.239" endtime="20210804 16:03:56.346"/>
+<msg timestamp="20210804 16:06:50.751" level="INFO">Typing text 'Ana Júlia Duarte' into text field 'xpath=//*[@id="person_name"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:50.751" endtime="20210804 16:06:50.858"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_email"]</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.347" level="INFO">Typing text 'wporto@cardoso.org' into text field 'xpath=//*[@id="person_email"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.346" endtime="20210804 16:03:56.464"/>
+<msg timestamp="20210804 16:06:50.859" level="INFO">Typing text 'bcostela@jesus.org' into text field 'xpath=//*[@id="person_email"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:50.858" endtime="20210804 16:06:50.955"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_phone_number"]</arg>
 <arg>${TELEPHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.465" level="INFO">Typing text '+55 (041) 4809 0498' into text field 'xpath=//*[@id="person_phone_number"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.465" endtime="20210804 16:03:56.583"/>
+<msg timestamp="20210804 16:06:50.955" level="INFO">Typing text '+55 (031) 2964-3220' into text field 'xpath=//*[@id="person_phone_number"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:50.955" endtime="20210804 16:06:51.089"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_birthday"]</arg>
 <arg>12/12/2000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.584" level="INFO">Typing text '12/12/2000' into text field 'xpath=//*[@id="person_birthday"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.583" endtime="20210804 16:03:56.683"/>
+<msg timestamp="20210804 16:06:51.090" level="INFO">Typing text '12/12/2000' into text field 'xpath=//*[@id="person_birthday"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.089" endtime="20210804 16:06:51.210"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_gender"]</arg>
 <arg>male</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210804 16:03:56.684" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_gender"]' by value male.</msg>
-<status status="PASS" starttime="20210804 16:03:56.683" endtime="20210804 16:03:56.755"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath=//*[@id="person_payment_attributes_tax_identification_number"]</arg>
-<arg>${CPF}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.756" level="INFO">Typing text '702.613.859-68' into text field 'xpath=//*[@id="person_payment_attributes_tax_identification_number"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.755" endtime="20210804 16:03:56.860"/>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>xpath=//*[@id="person_payment_attributes_payment_type"]</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210804 16:03:56.860" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_payment_attributes_payment_type"]' by value 1.</msg>
-<status status="PASS" starttime="20210804 16:03:56.860" endtime="20210804 16:03:56.935"/>
+<msg timestamp="20210804 16:06:51.211" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_gender"]' by value male.</msg>
+<status status="PASS" starttime="20210804 16:06:51.211" endtime="20210804 16:06:51.287"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_street"]</arg>
 <arg>${STREET}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:56.936" level="INFO">Typing text 'Conjunto Amanda Ribeiro' into text field 'xpath=//*[@id="person_address_attributes_street"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:56.935" endtime="20210804 16:03:57.041"/>
+<msg timestamp="20210804 16:06:51.288" level="INFO">Typing text 'Sítio Maria Correia' into text field 'xpath=//*[@id="person_address_attributes_street"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.287" endtime="20210804 16:06:51.404"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_number"]</arg>
 <arg>${STREET_NUMBER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:57.042" level="INFO">Typing text '3039074' into text field 'xpath=//*[@id="person_address_attributes_number"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:57.041" endtime="20210804 16:03:57.127"/>
+<msg timestamp="20210804 16:06:51.405" level="INFO">Typing text '623671' into text field 'xpath=//*[@id="person_address_attributes_number"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.405" endtime="20210804 16:06:51.491"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_complement"]</arg>
 <arg>${STREET_SUFIX}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:57.127" level="INFO">Typing text 'Street' into text field 'xpath=//*[@id="person_address_attributes_complement"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:57.127" endtime="20210804 16:03:57.213"/>
+<msg timestamp="20210804 16:06:51.492" level="INFO">Typing text 'Street' into text field 'xpath=//*[@id="person_address_attributes_complement"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.492" endtime="20210804 16:06:51.579"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_neighbour"]</arg>
 <arg>${NEIGHBOUR}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:57.213" level="INFO">Typing text 'Condomínio Dias' into text field 'xpath=//*[@id="person_address_attributes_neighbour"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:57.213" endtime="20210804 16:03:57.313"/>
+<msg timestamp="20210804 16:06:51.580" level="INFO">Typing text 'Sítio de Nascimento' into text field 'xpath=//*[@id="person_address_attributes_neighbour"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.580" endtime="20210804 16:06:51.682"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_city"]</arg>
 <arg>${CITY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:57.314" level="INFO">Typing text 'da Rosa Verde' into text field 'xpath=//*[@id="person_address_attributes_city"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:57.313" endtime="20210804 16:03:57.407"/>
+<msg timestamp="20210804 16:06:51.682" level="INFO">Typing text 'Rodrigues' into text field 'xpath=//*[@id="person_address_attributes_city"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.682" endtime="20210804 16:06:51.777"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>xpath=//*[@id="person_address_attributes_state_abbr"]</arg>
 <arg>AC</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210804 16:03:57.408" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_address_attributes_state_abbr"]' by value AC.</msg>
-<status status="PASS" starttime="20210804 16:03:57.407" endtime="20210804 16:03:57.479"/>
+<msg timestamp="20210804 16:06:51.778" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_address_attributes_state_abbr"]' by value AC.</msg>
+<status status="PASS" starttime="20210804 16:06:51.777" endtime="20210804 16:06:51.849"/>
 </kw>
+<status status="PASS" starttime="20210804 16:06:50.714" endtime="20210804 16:06:51.850"/>
+</kw>
+<kw name="E Preencher com CPF Válido" library="FichasSingleStep_resource">
+<kw name="Cpf" library="FakerLibrary">
+<var>${CPF}</var>
+<msg timestamp="20210804 16:06:51.850" level="INFO">${CPF} = 870.653.924-65</msg>
+<status status="PASS" starttime="20210804 16:06:51.850" endtime="20210804 16:06:51.850"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="person_payment_attributes_tax_identification_number"]</arg>
+<arg>${CPF}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210804 16:06:51.851" level="INFO">Typing text '870.653.924-65' into text field 'xpath=//*[@id="person_payment_attributes_tax_identification_number"]'.</msg>
+<status status="PASS" starttime="20210804 16:06:51.851" endtime="20210804 16:06:51.950"/>
+</kw>
+<status status="PASS" starttime="20210804 16:06:51.850" endtime="20210804 16:06:51.950"/>
+</kw>
+<kw name="E escolher a opção de Boleto" library="FichasSingleStep_resource">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath=//*[@id="person_payment_attributes_payment_type"]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210804 16:06:51.951" level="INFO">Selecting options from selection list 'xpath=//*[@id="person_payment_attributes_payment_type"]' by value 1.</msg>
+<status status="PASS" starttime="20210804 16:06:51.951" endtime="20210804 16:06:52.028"/>
+</kw>
+<status status="PASS" starttime="20210804 16:06:51.951" endtime="20210804 16:06:52.028"/>
+</kw>
+<kw name="E Confimar a Doação" library="FichasSingleStep_resource">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//*[@id="single_step_submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210804 16:03:57.479" level="INFO">Clicking button 'xpath=//*[@id="single_step_submit"]'.</msg>
-<status status="PASS" starttime="20210804 16:03:57.479" endtime="20210804 16:03:58.922"/>
-</kw>
-<status status="PASS" starttime="20210804 16:03:56.204" endtime="20210804 16:03:58.923"/>
-</kw>
-<kw name="ENTÃO a doação deve ter sido efetuada com sucesso" library="FichasSingleStep_resource">
-<kw name="Location Should Be" library="SeleniumLibrary">
-<arg>https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step/done</arg>
-<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20210804 16:06:52.029" level="INFO">Clicking button 'xpath=//*[@id="single_step_submit"]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210804 16:03:59.327" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210804 16:03:58.928" endtime="20210804 16:03:59.327"/>
+<msg timestamp="20210804 16:06:53.335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210804 16:06:53.088" endtime="20210804 16:06:53.335"/>
 </kw>
-<msg timestamp="20210804 16:03:59.330" level="FAIL">Location should have been 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step/done' but was 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step'.</msg>
-<status status="FAIL" starttime="20210804 16:03:58.923" endtime="20210804 16:03:59.330"/>
+<msg timestamp="20210804 16:06:53.339" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button name="button" type="button" id="single_step_submit" class="ui primary submit button big fluid warn"&gt;...&lt;/button&gt; is not clickable at point (333, 862). Other element would receive the click: &lt;div id="lgpd-message" class="lgpd dark-link" data-turbolinks="false"&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.131)
+</msg>
+<status status="FAIL" starttime="20210804 16:06:52.029" endtime="20210804 16:06:53.339"/>
 </kw>
-<status status="FAIL" starttime="20210804 16:03:58.923" endtime="20210804 16:03:59.330"/>
+<status status="FAIL" starttime="20210804 16:06:52.028" endtime="20210804 16:06:53.340"/>
 </kw>
-<status status="FAIL" starttime="20210804 16:03:52.299" endtime="20210804 16:03:59.331">Location should have been 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step/done' but was 'https://trackmob.colabore.trackmobdev.com.br/SalvandoDouglas/single_step'.</status>
+<kw name="ENTÃO a doação deve ter sido efetuada com sucesso" library="FichasSingleStep_resource">
+<status status="NOT RUN" starttime="20210804 16:06:53.340" endtime="20210804 16:06:53.340"/>
+</kw>
+<status status="FAIL" starttime="20210804 16:06:47.007" endtime="20210804 16:06:53.340">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button name="button" type="button" id="single_step_submit" class="ui primary submit button big fluid warn"&gt;...&lt;/button&gt; is not clickable at point (333, 862). Other element would receive the click: &lt;div id="lgpd-message" class="lgpd dark-link" data-turbolinks="false"&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.131)
+</status>
 </test>
-<status status="FAIL" starttime="20210804 16:03:51.587" endtime="20210804 16:03:59.331"/>
+<status status="FAIL" starttime="20210804 16:06:46.299" endtime="20210804 16:06:53.341"/>
 </suite>
-<status status="FAIL" starttime="20210804 16:03:51.555" endtime="20210804 16:03:59.333"/>
+<status status="FAIL" starttime="20210804 16:06:46.263" endtime="20210804 16:06:53.342"/>
 </suite>
 <statistics>
 <total>
